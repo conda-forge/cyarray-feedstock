@@ -3,7 +3,7 @@ About cyarray
 
 Home: https://github.com/pypr/cyarray
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
