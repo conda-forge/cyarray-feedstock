@@ -10,12 +10,13 @@ source:
   sha256: 00e1271e66e5f82ff846e054a61f78e22e04589253b7705813ea8a624642a402
   
 build:
-  number: 6
+  number: 7
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
   host:
     - cython >=0.20
     - numpy
@@ -23,7 +24,6 @@ requirements:
     - pip
   run:
     - python
-    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
